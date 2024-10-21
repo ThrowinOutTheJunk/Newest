@@ -17,9 +17,9 @@
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#reviews">Reviews</a></li> <!-- Link to Reviews Section -->
-                <li><a href="#book-now">Book Now</a></li>
+                
+                
+                
             </ul>
         </nav>
     </header>
@@ -57,49 +57,3 @@
         <h2>Contact Us: 531-210-6935</h2>
         <p>At Throwing Out The Junk, We Pride Ourselves On Fast, Efficient, And Eco-Friendly Junk Removal Services. Whether You’re A Homeowner Or A Business, We Have Solutions For All Your Junk Removal Needs!</p>
     </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews" class="reviews">
-        <h2>Customer Reviews</h2>
-
-        <!-- Review Submission Form -->
-        <form id="review-form">
-            <input type="text" id="review-name" placeholder="Your Name" required>
-            <textarea id="review-text" placeholder="Your Review" required></textarea>
-            <button type="submit">Submit Review</button>
-        </form>
-
-        <!-- Display Submitted Reviews -->
-        <div id="review-list"></div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Throwing Out The Junk | All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // JavaScript to handle review submissions
-        document.getElementById('review-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Get the values from the input fields
-            const name = document.getElementById('review-name').value;
-            const text = document.getElementById('review-text').value;
-
-            // Create a new review element
-            const reviewItem = document.createElement('div');
-            reviewItem.classList.add('review-item');
-            reviewItem.innerHTML = `<p>"${text}"</p><span>- ${name}</span>`;
-
-            // Append the new review to the review list
-            document.getElementById('review-list').appendChild(reviewItem);
-
-            // Clear the form fields
-            document.getElementById('review-name').value = '';
-            document.getElementById('review-text').value = '';
-        });
-    </script>
-</body>
-</html>
-
