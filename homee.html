@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Throwin' Out The Junk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>Throwin' Out The Junk</h1>
+            <img src="https://th.bing.com/th/id/R.24f70def39b801540452e59ebf7ed55e?rik=DNN8HsFzhqPPaA&riu=http%3a%2f%2fsweetclipart.com%2fmultisite%2fsweetclipart%2ffiles%2ftrash_can.png&ehk=pwx4rIBrMRLbeIGFT%2fjAAWyG8vuY5lrFJT0r377Mr%2bc%3d&risl=&pid=ImgRaw&r=0" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li> <!-- Link to Reviews Section -->
+                <li><a href="#book-now">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Quick and Affordable Junk Removal!</h2>
+            <p>We Help you Get Rid Of Your Junk With Ease!</p>
+            <a href="#book-now" class="cta-btn">Book A Pickup With Our Contact Below!</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Trash For Dump Removal</h3>
+                <p>Clear Out Unwanted Items, Trash From Your Home For A Fee.</p>
+            </div>
+            <div class="service-item">
+                <h3>Commercial Junk Removal</h3>
+                <p>Office Cleanouts And More For Businesses.</p>
+            </div>
+            <div class="service-item">
+                <h3>Metal Recycling</h3>
+                <p>Environmentally Friendly Disposal Of Scrap Metal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>Contact Us: 531-210-6935</h2>
+        <p>At Throwing Out The Junk, We Pride Ourselves On Fast, Efficient, And Eco-Friendly Junk Removal Services. Whether You’re A Homeowner Or A Business, We Have Solutions For All Your Junk Removal Needs!</p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+
+        <!-- Review Submission Form -->
+        <form id="review-form">
+            <input type="text" id="review-name" placeholder="Your Name" required>
+            <textarea id="review-text" placeholder="Your Review" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <!-- Display Submitted Reviews -->
+        <div id="review-list"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Throwing Out The Junk | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle review submissions
+        document.getElementById('review-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the values from the input fields
+            const name = document.getElementById('review-name').value;
+            const text = document.getElementById('review-text').value;
+
+            // Create a new review element
+            const reviewItem = document.createElement('div');
+            reviewItem.classList.add('review-item');
+            reviewItem.innerHTML = `<p>"${text}"</p><span>- ${name}</span>`;
+
+            // Append the new review to the review list
+            document.getElementById('review-list').appendChild(reviewItem);
+
+            // Clear the form fields
+            document.getElementById('review-name').value = '';
+            document.getElementById('review-text').value = '';
+        });
+    </script>
+</body>
+</html>
+
