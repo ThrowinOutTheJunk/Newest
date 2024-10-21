@@ -3,68 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Throwin' Out The Junk</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Throwing Out The Junk - Reliable junk and scrap removal services. We come to you and remove unwanted belongings.">
+    <title>Throwing Out The Junk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .main-section {
+            padding: 20px;
+        }
+        .services, .about {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <div class="logo-container">
-            <h1>Throwin' Out The Junk</h1>
-            <img src="https://th.bing.com/th/id/R.24f70def39b801540452e59ebf7ed55e?rik=DNN8HsFzhqPPaA&riu=http%3a%2f%2fsweetclipart.com%2fmultisite%2fsweetclipart%2ffiles%2ftrash_can.png&ehk=pwx4rIBrMRLbeIGFT%2fjAAWyG8vuY5lrFJT0r377Mr%2bc%3d&risl=&pid=ImgRaw&r=0" alt="Logo" class="logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                
-                
-                
-            </ul>
-        </nav>
+        <h1>Throwing Out The Junk</h1>
+        <p>Reliable Junk and Scrap Removal Services</p>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Quick and Affordable Junk Removal!</h2>
-            <p>We Help you Get Rid Of Your Junk With Ease!</p>
-            <a href="#book-now" class="cta-btn">Book A Pickup With Our Contact Below!</a>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section class="main-section">
+        <div id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Household Junk Removal</h3>
+                    <p>We take away unwanted household items quickly and efficiently.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Metal Item Removal</h3>
+                    <p>Specializing in the removal of appliances, scrap metal, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Yard Waste Removal</h3>
+                    <p>Cleaning up your yard and garden of leaves, branches, and other debris.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Construction Debris Removal</h3>
+                    <p>We handle all types of construction waste to keep your site clean.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Furniture Removal</h3>
+                    <p>Removing old furniture to make space for new pieces.</p>
+                </div>
+            </div>
+            <p>We come to you and take away anything you don’t want. Quick, efficient, and affordable!</p>
+        </div>
+
+        <div id="about" class="about">
+            <h2>About Us</h2>
+            <p>At Throwing Out The Junk, we are committed to helping you get rid of unwanted junk, metal items, and other belongings you no longer need. We pride ourselves on fast, friendly service and making sure your space is clear of clutter.</p>
         </div>
     </section>
 
-    <div id="services" class="services">
-        <h2></h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Household Junk Removal</h3>
-                <p>We take away unwanted household items quickly and efficiently.</p>
-            </div>
-            <div class="service-item">
-                <h3>Metal Item Removal</h3>
-                <p>Specializing in the removal of appliances, scrap metal, and more.</p>
-            </div>
-            <div class="service-item">
-                <h3>Yard Waste Removal</h3>
-                <p>Cleaning up your yard and garden of leaves, branches, and other debris.</p>
-            </div>
-            <div class="service-item">
-                <h3>Construction Debris Removal</h3>
-                <p>We handle all types of construction waste to keep your site clean.</p>
-            </div>
-            <div class="service-item">
-                <h3>Furniture Removal</h3>
-                <p>Removing old furniture to make space for new pieces.</p>
-            </div>
-        </div>
-        
-
-    <!-- About Us Section -->
-    <section id="about" class="about">
-        <h2>Contact Us: 531-210-6935</h2>
-        <p>At Throwing Out The Junk, We Pride Ourselves On Fast, Efficient, And Eco-Friendly Junk Removal Services. Whether You’re A Homeowner Or A Business, We Have Solutions For All Your Junk Removal Needs!</p>
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
-        <h2>Contact Us: 531-210-6935</h2>
-        <p>At Throwing Out The Junk, We Pride Ourselves On Fast, Efficient, And Eco-Friendly Junk Removal Services. Whether You’re A Homeowner Or A Business, We Have Solutions For All Your Junk Removal Needs!</p>
-    </section>
+    <footer>
+        <p>&copy; 2024 Throwing Out The Junk | Junk and Scrap Removal Services</p>
+    </footer>
+
+</body>
+</html>
